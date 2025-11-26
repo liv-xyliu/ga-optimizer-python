@@ -12,7 +12,6 @@ def initialize_population(size):
 
 def select(population, fitness, num_parents):
     parents = np.empty(num_parents)
-    # 不想改的话可以直接用你原来的版本，把这一行换成：fitness_copy = fitness
     fitness_copy = fitness.copy()
     for i in range(num_parents):
         max_index = np.argmax(fitness_copy)
